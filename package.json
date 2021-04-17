@@ -1,0 +1,50 @@
+{
+  "name": "@ubcdigital/symbol-taxonomy",
+  "version": "1.0.0",
+  "license": "AGPL-3.0",
+  "description": "Open source library for defining transaction taxonomies and in-aggregate semantics for Symbol from NEM",
+  "keywords": [
+    "blockchain",
+    "symbol",
+    "taxonomy",
+    "semantics"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^5.2.7",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "chai": "^4.3.3",
+    "eslint": "^6.8.0",
+    "mocha": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^7.0.0",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.9.9",
+    "utf8": "3.0.0",
+    "highlight.js": ">=10.4.1",
+    "symbol-sdk": "^1.0.0"
+  },
+  "scripts": {
+    "lint": "eslint src/ --ext .ts && eslint test/ --ext .ts",
+    "lint:fix": "eslint src/ --ext .ts --fix && eslint test/ --ext .ts --fix",
+    "build": "rimraf dist && mkdir dist && tsc",
+    "pretest": "npm run build",
+    "test": "mocha --ui bdd --recursive ./dist/test",
+    "version": "echo $npm_package_version",
+    "docs": "npx typedoc --out \"docs/`npm run version --silent`\" src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usingblockchain/symbol-taxonomy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usingblockchain/symbol-taxonomy/issues"
+  },
+  "homepage": "https://github.com/usingblockchain/symbol-taxonomy#readme"
+}
