@@ -5,7 +5,7 @@
 [![npm-badge][npm-badge]][npm-url]
 [![size-badge][size-badge]][npm-url]
 [![dl-badge][dl-badge]][npm-url]
-[![Build Status](https://travis-ci.com/UsingBlockchain/UBCDigitalTools.svg?branch=master)](https://travis-ci.com/UsingBlockchain/UBCDigitalTools)
+[![Build Status](https://travis-ci.com/UsingBlockchain/symbol-taxonomy.svg?branch=main)](https://travis-ci.com/UsingBlockchain/symbol-taxonomy)
 
 This repository contains the source code for **@ubcdigital/symbol-taxonomy**, an open standard for defining transaction taxonomies and semantics on top of Symbol from NEM, and compatible networks.
 

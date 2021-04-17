@@ -1,6 +1,6 @@
 {
   "name": "@ubcdigital/symbol-taxonomy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "AGPL-3.0",
   "description": "Open source library for defining transaction taxonomies and in-aggregate semantics for Symbol from NEM",
   "keywords": [
