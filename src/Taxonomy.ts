@@ -22,19 +22,22 @@ import { SemanticRuleset } from './Semantics/SemanticRuleset'
  * @example How to create a transaction taxonomy
  *
  * ```javascript
- * import { Taxonomy, TaxonomyMap } from '@ubcdigital/symbol-taxonomy'
+ * import * as Lib from '@ubcdigital/symbol-taxonomy'
  * import {
  *   AggregateTransaction,
  *   TransactionType as TType,
  * } from 'symbol-sdk'
  *
- * cont taxonomy = new Taxonomy(
+ * const taxonomy = new Lib.Taxonomy(
  *   'UBCDigital.NamedAssetCreation',
- *   new TaxonomyMap([
- *      [0, { type: TType.NAMESPACE_REGISTRATION, required: true }],
- *      [1, { type: TType.MOSAIC_DEFINITION, required: true }],
- *      [2, { type: TType.MOSAIC_SUPPLY_CHANGE, required: false }],
- *      [3, { type: TType.TRANSFER, required: true }],
+ *   new Lib.TaxonomyMap([
+ *     [0, { type: TType.NAMESPACE_REGISTRATION, required: true }],
+ *     [1, { type: TType.MOSAIC_DEFINITION, required: true }],
+ *     [2, { type: TType.MOSAIC_SUPPLY_CHANGE, required: false }],
+ *     [3, { type: TType.TRANSFER, required: false }],
+ *   ]),
+ *   new Lib.SemanticsMap([
+ *     [3, new Lib.OptionalEntry([], 0)]
  *   ])
  * )
  *

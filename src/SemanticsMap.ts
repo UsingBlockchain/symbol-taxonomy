@@ -15,6 +15,16 @@ import { TaxonomyMapEntry } from './TaxonomyMap'
  * @class SemanticsMap
  * @since v1.0.0
  * @description Class that describes indexed semantic rulesets.
+ *
+ * @example How to create a semantics map
+ *
+ * ```javascript
+ * import * as Lib from '@ubcdigital/symbol-taxonomy'
+ *
+ * const semantics = new Lib.SemanticsMap([
+ *   [0, Lib.RequiredEntry([], 1, 5)],
+ * ])
+ * ```
  */
 export class SemanticsMap extends Map<number, SemanticRuleset> {
   /**
@@ -50,12 +60,6 @@ export class SemanticsMap extends Map<number, SemanticRuleset> {
     if (numOccurences < 0) {
       return -1
     }
-
-    // - Gets the next transaction following bundle(s)
-    const bundlesUntilIdx = numOccurences * entries.length
-    const nextTransaction = bundlesUntilIdx > 0 && bundlesUntilIdx < transactions.length
-      ? transactions.slice(bundlesUntilIdx, bundlesUntilIdx+1).shift()
-      : null
 
     // - Repeatable entries must be kept within boundaries
     if (! this.validateBoundaries(ruleset, numOccurences)) {

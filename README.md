@@ -57,12 +57,12 @@ Donations can also be made with cryptocurrencies and will be used for running th
 
 ## License
 
-Copyright 2020-2021 Using Blockchain Ltd, Reg No.: 12658136, United Kingdom, All rights reserved.
+Copyright 2020-2021 [Using Blockchain Ltd][ref-ltd], Reg No.: 12658136, United Kingdom, All rights reserved.
 
 Licensed under the [AGPL v3 License](LICENSE).
 
 [ref-docs]: https://symbol-taxonomy.symbol.ninja/
-
+[ref-ltd]: https://using-blockchain.org
 [npm-url]: https://www.npmjs.com/package/@ubcdigital/symbol-taxonomy
 [npm-badge]: https://img.shields.io/npm/v/@ubcdigital/symbol-taxonomy
 [size-badge]: https://img.shields.io/bundlephobia/min/@ubcdigital/symbol-taxonomy
