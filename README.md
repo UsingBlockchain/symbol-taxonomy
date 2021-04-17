@@ -2,8 +2,10 @@
 
 # @ubcdigital/symbol-taxonomy
 
-[![npm version](https://badge.fury.io/js/ubcdigital/symbol-taxonomy.svg)](https://badge.fury.io/js/@ubcdigital/symbol-taxonomy)
-[![Build Status](https://travis-ci.com/usingblockchain/symbol-taxonomy.svg?branch=main)](https://travis-ci.com/usingblockchain/symbol-taxonomy)
+[![npm-badge][npm-badge]][npm-url]
+[![size-badge][size-badge]][npm-url]
+[![dl-badge][dl-badge]][npm-url]
+[![Build Status](https://travis-ci.com/UsingBlockchain/UBCDigitalTools.svg?branch=master)](https://travis-ci.com/UsingBlockchain/UBCDigitalTools)
 
 This repository contains the source code for **@ubcdigital/symbol-taxonomy**, an open standard for defining transaction taxonomies and semantics on top of Symbol from NEM, and compatible networks.
 
@@ -60,3 +62,8 @@ Copyright 2020-2021 Using Blockchain Ltd, Reg No.: 12658136, United Kingdom, All
 Licensed under the [AGPL v3 License](LICENSE).
 
 [ref-docs]: https://symbol-taxonomy.symbol.ninja/
+
+[npm-url]: https://www.npmjs.com/package/@ubcdigital/symbol-taxonomy
+[npm-badge]: https://img.shields.io/npm/v/@ubcdigital/symbol-taxonomy
+[size-badge]: https://img.shields.io/bundlephobia/min/@ubcdigital/symbol-taxonomy
+[dl-badge]: https://img.shields.io/npm/dt/@ubcdigital/symbol-taxonomy
